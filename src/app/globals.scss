@@ -138,3 +138,12 @@ a {
   color: white !important;
   transform: scale(1.1);
 }
+
+.email-link:hover {
+  transform: scale(1.1);
+}
+
+a {
+  transition: .4s;
+  color: white;
+}

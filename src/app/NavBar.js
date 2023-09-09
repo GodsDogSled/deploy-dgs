@@ -59,16 +59,17 @@ export default function NavBar() {
         <div className="stacking-bars">
 
           <ul className="top-bar ">
-            <li className="mobile-show phone-number">123-3456-234</li>
+            <li className="mobile-show phone-number">+1(778) 558-6341</li>
             <TopNavBarLink
               img={"https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg"}
               header={"Reach Out"}
-              info={"123-456-7890"}
+              info={"+1 (778) 558-6341"}
             />
             <TopNavBarLink
               img={"https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg"}
               header={"Send us a Message"}
-              info={"email@email.com"}
+              info={"dgscservices@gmail.com"}
+              handleLink={"mailto: abc@example.com"}
             />
             <TopNavBarLink
               img={"https://d33wubrfki0l68.cloudfront.net/031a45ce3d2104e44dfa82761a91b4c44a28f8d3/c2fbe/assets/images/pin-stroke.svg"}

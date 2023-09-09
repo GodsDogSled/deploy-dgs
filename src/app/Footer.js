@@ -11,20 +11,20 @@ export default function Footer() {
           <h2>Quick Links</h2>
           <ul>
             <li>
-              <Link href={"#"}>About</Link>
+              <Link href={"/about"}>About</Link>
             </li>
             <li>
-              <Link href={"#"}>Services</Link>
+              <Link href={"/services"}>Services</Link>
             </li>
             <li>
-              <Link href={"#"}>Contact Us</Link>
+              <Link href={"/contact"}>Contact Us</Link>
             </li>
             <li>
-              <Link href={"#"}>FAQ</Link>
+              <Link href={"/faqs"}>FAQ</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href={"#"}>Tersm of Service</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -32,16 +32,16 @@ export default function Footer() {
           <h2>Cleaning Services</h2>
           <ul>
             <li>
-              <Link href={"#"}>House and Apartment Cleaning</Link>
+              <Link href={"/services"}>House and Apartment Cleaning</Link>
             </li>
             <li>
-              <Link href={"#"}>Move In/Out Cleaning</Link>
+              <Link href={"/services"}>Move In/Out Cleaning</Link>
             </li>
             <li>
-              <Link href={"#"}>Deep Cleaning</Link>
+              <Link href={"/services"}>Deep Cleaning</Link>
             </li>
             <li>
-              <Link href={"#"}>Appliances</Link>
+              <Link href={"/services"}>Appliances</Link>
             </li>
           </ul>
         </div>
@@ -51,9 +51,9 @@ export default function Footer() {
           <ul>
             <li>
               <Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />
-              Phone Number
+              +1 (778 558-6314)
             </li>
-            <li><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />email</li>
+            <a className="email-link" style={{ display: "flex", justifyItems: "center" }} href="mailto: abc@example.com" ><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />dgscservices@gmail.com</a>
             <li><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/031a45ce3d2104e44dfa82761a91b4c44a28f8d3/c2fbe/assets/images/pin-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />Greater Vancouver, BC</li>
           </ul>
         </div>
