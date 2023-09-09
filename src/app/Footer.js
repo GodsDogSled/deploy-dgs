@@ -60,7 +60,7 @@ export default function Footer() {
 
       </section>
       <section className="bottom-section">
-        <span className="copyright" href="premiumgabe.com">Website hand coded by <br></br> <a href="premiumgabe.com">PremiumGabe</a> Web Designs</span>
+        <span className="copyright" >Website hand coded by <br></br> <a target="_blank" href="https://premiumgabe.com/">PremiumGabe</a> Web Designs</span>
       </section>
     </footer>
   )
