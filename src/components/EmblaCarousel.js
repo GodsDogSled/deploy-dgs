@@ -95,7 +95,7 @@ const EmblaCarousel = (props) => {
           </div>
         </div>
 
-        <div className="embla__buttons">
+        <div className="embla__buttons mobile-hide">
           <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
           <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
         </div>
