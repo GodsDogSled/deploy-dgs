@@ -69,7 +69,7 @@ export default function NavBar() {
               img={"https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg"}
               header={"Send us a Message"}
               info={"dgscservices@gmail.com"}
-              handleLink={"mailto: abc@example.com"}
+              handleLink={"mailto: dgscservices@gmail.com"}
             />
             <TopNavBarLink
               img={"https://d33wubrfki0l68.cloudfront.net/031a45ce3d2104e44dfa82761a91b4c44a28f8d3/c2fbe/assets/images/pin-stroke.svg"}
