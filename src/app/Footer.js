@@ -53,7 +53,7 @@ export default function Footer() {
               <Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />
               +1 (778 558-6314)
             </li>
-            <a className="email-link" style={{ display: "flex", justifyItems: "center" }} href="mailto: abc@example.com" ><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />dgscservices@gmail.com</a>
+            <a className="email-link" style={{ display: "flex", justifyItems: "center" }} href="mailto: dgscservices@gmail.com" ><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />dgscservices@gmail.com</a>
             <li><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/031a45ce3d2104e44dfa82761a91b4c44a28f8d3/c2fbe/assets/images/pin-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />Greater Vancouver, BC</li>
           </ul>
         </div>
