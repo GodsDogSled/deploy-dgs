@@ -1,8 +1,9 @@
 $base-color: #0182CB;
 $secondary-color: #1298E3;
 
-.mobile-hide {
-  display: none;
+.mobile-hide,
+.mobile-hide-buttons {
+  display: none !important;
 }
 
 .toggled-color {
@@ -169,6 +170,10 @@ header {
   .mobile-hide {
     display: flex;
     flex-direction: column;
+  }
+
+  .mobile-hide-buttons {
+    display: flex !important;
   }
 
   .logo {
