@@ -1,5 +1,5 @@
 .sandbox {
-  width: 100%;
+  // width: 100%;
 }
 
 @media (min-width: 750px) {
@@ -26,6 +26,8 @@
   .sandbox__carousel {
     border-radius: 0.4rem;
     border: 0.1rem solid var(--detail-low-contrast);
+    max-width: 1080px;
+    margin: 0 !important;
   }
 }
 

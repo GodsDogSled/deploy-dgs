@@ -1,7 +1,10 @@
 $base-color: #0182CB;
 $secondary-color: #1298E3;
 
-.mobile-hide,
+.mobile-hide {
+  display: none;
+}
+
 .mobile-hide-buttons {
   display: none !important;
 }
