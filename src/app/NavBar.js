@@ -11,7 +11,12 @@ import Logo from "../components/Logo";
 
 export default function NavBar() {
 
-  window.addEventListener("scroll", changeNavBar);
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeNavBar);
+  }
+
+
 
   function changeNavBar() {
     const topBarLi = document.querySelectorAll(".top-bar > li");
