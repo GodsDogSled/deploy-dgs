@@ -21,7 +21,7 @@ export default async function Page() {
               We know that your time is valuable, which is why we offer flexible scheduling options tailored to your needs. Whether you require a one-time deep cleaning or regular maintenance, we have you covered with affordable rates. We are dedicated to making a positive impact in the cities we serve, contributing to the betterment of our local communities.
             </p>
             <p>
-              So, why wait? Experience the difference with DGS Cleaning, the leading choice for residential house cleaning. Contact us today, whether you have a house, a condo or an apartment, and let our professional team transform your home into a pristine sanctuary you'll love coming back to.
+              So, why wait? Experience the difference with DGS Cleaning, the leading choice for residential house cleaning. Contact us today, whether you have a house, a condo or an apartment, and let our professional team transform your home into a pristine sanctuary you will love coming back to.
             </p>
 
           </div>
@@ -29,8 +29,8 @@ export default async function Page() {
           <div className="picture">
             <Image
               fill
-              sizes="100vw"
-              style={{ objectFit: 'cover' }}
+              sizes="50vw"
+              style={{ objectFit: "cover" }}
               alt="woman cleaning a house"
               src={woman}
             />
