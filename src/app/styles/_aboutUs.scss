@@ -1,0 +1,175 @@
+.about {
+  text-align: left;
+
+  span {
+    padding-bottom: 1em;
+  }
+
+  a {
+    background-color: $secondary-color;
+    width: fit-content;
+    color: black;
+    padding: .75em;
+    border: 1px solid $secondary-color;
+    border-radius: 0 15px 15px 15px;
+    font-family: laviossa;
+    font-size: medium;
+    color: whitesmoke;
+  }
+
+  h2,
+  a,
+  p,
+  .topper {
+    align-self: start;
+  }
+}
+
+@media only screen and (min-width: 74rem) {
+  .about {
+    display: flex;
+    padding: 0 0rem clamp(.5rem, 3.7vw, 8.70rem);
+
+    .picture {
+      max-height: 800px;
+      object-fit: cover;
+      width: 50%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    h1 {
+      max-width: 80%;
+    }
+
+    .content {
+      align-items: flex-start;
+      text-align: left;
+      width: 40%;
+      padding: clamp(5.5rem, 3.7vw, 8.70rem) 0;
+    }
+
+    .button-group {
+      text-align: left;
+
+      a {
+        font-size: 1.3em;
+      }
+    }
+
+  }
+}
+
+//-----------------------About Page--------------------------//
+.about-page {
+
+  // padding: clamp(7.5rem, 6.82vw, 10.75rem) 1rem clamp(6.5rem, 5.82vw, 10.75rem);
+  p {
+    max-width: 100%;
+  }
+
+  .contact {
+    background-color: $base-color;
+    padding: 1em 1em 3em 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote {
+    align-self: left;
+    padding: .75em;
+    margin-top: 2em;
+    background-color: white;
+    border-radius: 0 15px 15px 15px;
+    font-family: laviossa;
+    color: $base-color;
+    width: fit-content
+  }
+
+  .contact-icon {
+    font-size: clamp(100%, 0.9vw, 300%);
+    font-weight: 700;
+    font-family: rubik-semi;
+    padding: 1.5rem 0 0 0;
+    align-self: left;
+
+    img {
+      align-self: center;
+      padding: 0 .5em 0 0em;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      color: white;
+
+      :nth-child(2) {
+        font-size: 0.875rem;
+        font-weight: 200;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 720px) {
+  .about-page {
+
+    .icon-group {
+      display: flex;
+      gap: 10em;
+      margin: 0 auto;
+
+    }
+
+    .content {
+      width: 50%;
+    }
+
+    .contact-icon {
+      font-size: clamp(100%, 1.5vw, 300%);
+
+      img {
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      .text-content {
+        :nth-child(2) {
+          font-size: clamp(100%, 0.3vw, 300%);
+        }
+      }
+    }
+
+    .contact {
+      padding: 5em;
+      flex-wrap: wrap;
+    }
+
+    .quote {
+      padding: 1em;
+      margin-top: 3em;
+      font-size: 2.1em;
+      align-self: center;
+    }
+
+    .picture {
+
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .sub-page {
+    display: flex;
+
+
+  }
+
+
+}

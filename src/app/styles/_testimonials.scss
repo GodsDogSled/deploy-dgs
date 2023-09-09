@@ -1,0 +1,146 @@
+.testimonials {
+
+  padding-bottom: 3em;
+  background-color: whitesmoke;
+}
+
+.testimonial {
+  max-width: 470px !important;
+
+  padding: 1em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 0 15px 15px 15px;
+
+  background-color: white;
+
+
+  .name {
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin-top: auto;
+    color: $base-color;
+    display: block;
+  }
+
+  span {
+    margin-left: clamp(1.25rem, 3vw, 2.5rem);
+  }
+
+
+  p {
+    font-size: clamp(0.875rem, 2vw, 1.2rem);
+    line-height: 1.5em;
+    margin: 0;
+    margin-left: clamp(1.25rem, 3vw, 2.5rem);
+    color: var(--bodyTextColor);
+    font-family: rubik-semi;
+  }
+
+  svg {
+    width: clamp(1.1rem, 3vw, 1.5rem);
+    fill: $secondary-color;
+  }
+
+  .quote {
+    display: block;
+    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .right-quote {
+    margin-left: 85%;
+    padding-bottom: 2em;
+  }
+}
+
+.embla {
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.embla__container {
+  display: flex;
+  max-width: 900px;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  max-width: 410px !important;
+}
+
+.testimonial-container {
+  padding-top: 4em !important;
+
+}
+
+
+@media only screen and (min-width: 980px) {
+  .testimonial-cards {
+    justify-content: space-around;
+    display: flex;
+    max-width: 1000px;
+    gap: 1em;
+
+
+    li {
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 74rem) {
+  .testimonials {
+    .testimonial-container {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0rem clamp(.5rem, 3.7vw, 8.70rem);
+      width: 100%;
+      max-width: 2200px;
+      margin: 0 auto;
+    }
+
+
+    .picture {
+      max-height: 500px;
+      object-fit: cover;
+      width: 50%;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    h1 {
+      max-width: 80%;
+    }
+
+    .content {
+      align-items: flex-start;
+      text-align: left;
+      width: 60%;
+      padding: clamp(5.5rem, 3.7vw, 8.70rem);
+    }
+
+    .card-group {
+      text-align: left;
+
+      a {
+        font-size: 1.3em;
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 74rem) {
+  .testimonials {
+    .testimonial-cards {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+footer {
+  padding: .5em;
+  background: rgb(11, 99, 179);
+  background: radial-gradient(circle, rgba(11, 99, 179, 0.9389005602240896) 31%, rgba(18, 152, 227, 1) 83%, rgba(18, 152, 227, 1) 100%);
+  padding-bottom: 0;
+
+  a {
+    width: 100%;
+  }
+
+  .logo-footer {
+    background-color: white;
+    width: 15em;
+    height: 15em;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+
+    svg {
+
+      fill: white !important;
+    }
+  }
+
+  .top-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: clamp(3rem, 6vw, 6.25rem);
+    row-gap: 2rem;
+    padding-bottom: 1em;
+    margin: 1em;
+    max-width: 80em;
+  }
+
+  h2 {
+    color: whitesmoke;
+    font-family: laviossa;
+    font-size: larger;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .85rem;
+    flex: none;
+    margin-bottom: 2em;
+  }
+
+  li {
+    font-size: clamp(0.575rem, 1vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    font-family: rubik-semi;
+
+    :hover {
+      color: $secondary-color;
+    }
+  }
+
+  a {
+    color: white;
+  }
+
+  .bottom-section {
+    width: 100%;
+
+    .copyright {
+      font-family: rubik-semi;
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      text-align: center;
+      width: 70%;
+      margin: 0;
+      display: block;
+    }
+
+    margin: 0;
+    padding: clamp(1.25rem, 5vw, 2rem) 0 clamp(1.25rem, 5vw, 2rem) 0;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) {
+  footer {
+    align-items: center;
+    padding: clamp(2.75em, 2.82vw, 5.25em) 0 0 0;
+
+    .logo-footer {
+      // width: 15%;
+      margin-right: auto;
+    }
+
+    .top-section {
+      padding: 5em;
+      align-self: center;
+      margin: 0 auto;
+    }
+
+
+  }
+}

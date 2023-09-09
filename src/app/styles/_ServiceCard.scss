@@ -1,0 +1,213 @@
+//-------TABLE OF CONTENTS --------------------------------
+//---
+//--- 1. Basic Service Cards
+//---
+//--- 2. Complete Service Cards
+//---
+//___________________Media Queries_______________
+//
+///////--- basic service
+///////
+///////--- complete service
+//
+//----------------------------------------------------------
+
+
+//------ 1. Basic Service Card
+//
+.services {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      list-style: none;
+      padding: clamp(2.5rem, 6.3vw, 4rem);
+      box-sizing: border-box;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      transition: filter .3s;
+
+      h2 {
+        font-size: 1.5625rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2em;
+        margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+        display: block;
+      }
+
+      a {
+        background-color: white;
+        color: black;
+        padding: .75em;
+        border: 1px solid $secondary-color;
+        border-radius: 0 15px 15px 15px;
+        font-family: laviossa;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#blue {
+  background-color: $secondary-color;
+  color: white;
+
+  a {
+    background-color: white;
+    color: $base-color;
+  }
+}
+
+
+//---------- 2. Complete Service Card-------------------
+//
+.complete-services {
+  text-align: left;
+  background-color: whitesmoke;
+
+
+
+  .topper,
+  h2,
+  p {
+    align-self: start;
+  }
+
+  .card-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      margin-bottom: 0;
+      max-width: 33.8125rem;
+    }
+
+    li {
+      text-align: center;
+      color: black;
+      background-color: white;
+      list-style: none;
+      max-width: 28.875rem;
+      border-radius: 0.25rem;
+      padding: clamp(1.25rem, 4vw, 2.5rem) 1.5rem;
+      box-sizing: border-box;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+  }
+}
+
+
+//___________________________________MEDIA QUERIES___________________________________
+//
+//--------BASIC SERVICE CARD------------------------
+@media only screen and (min-width: 40.625rem) {
+  .services {
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      :nth-child(3) {
+        order: 4;
+      }
+
+      li {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 74rem) {
+  .services {
+
+    img {}
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      :nth-child(4) {
+        order: 4;
+      }
+
+      li {
+        padding: clamp(2.5rem, 6.3vw, 4rem);
+        width: 25%;
+        font-size: 1.5625rem;
+
+      }
+    }
+
+
+  }
+}
+
+
+
+//--------COMPLETE SERVICE CARD----------------------
+@media only screen and (min-width: 48rem) {
+  .complete-services {
+    .card-group {
+      margin-bottom: 2.5rem;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 1.25rem;
+
+      li {
+        align-items: start;
+        width: 29vw;
+        max-width: 25.8125rem;
+        min-height: 380px;
+      }
+    }
+  }
+
+  .content {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 74rem) {
+  .complete-services {
+    .card-group {
+      margin-bottom: 2.5rem;
+      flex-direction: row;
+      justify-content: center;
+
+      column-gap: 1.25rem;
+
+      li {
+        align-items: start;
+        width: 295px;
+        height: 410px;
+        max-width: 25.8125rem;
+        min-height: 380px;
+      }
+    }
+  }
+}

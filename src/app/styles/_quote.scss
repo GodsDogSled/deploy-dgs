@@ -1,0 +1,69 @@
+.quote-page {
+  padding: 4em 1em 10em 1em;
+  font-family: rubik-semi;
+  max-width: 34.375em;
+  margin: 0 auto;
+  min-height: 55vh;
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+    font-family: rubik-semi;
+    background-color: whitesmoke;
+
+    .red-error {
+      color: red;
+    }
+
+    .dropdown {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap: .4em;
+
+      .greyed-out {
+        color: grey !important;
+      }
+
+      select,
+      input {
+        padding: .9em;
+        border-radius: 0 15px 15px 15px;
+        border: 2px solid $secondary-color;
+
+        :focus {
+          color: $base-color;
+        }
+      }
+
+      option {
+        font-family: rubik-semi;
+      }
+    }
+
+    .radio-group {
+      margin-top: 1em;
+
+      input {
+        margin-left: 1em;
+      }
+    }
+
+    .checkboxes {
+      input {
+        margin: 1em;
+
+      }
+    }
+
+    button {
+      :hover {
+        color: red;
+      }
+    }
+  }
+
+}

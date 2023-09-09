@@ -1,0 +1,136 @@
+.service-page-node {
+  padding: 1.5em;
+  margin: 1.2em;
+  background-color: $secondary-color;
+  border-radius: 0px 15px 15px 15px;
+  color: white;
+  font-family: rubik;
+
+  .image-container {
+    margin-bottom: 1em;
+    max-width: 95%;
+    border-radius: 0px 15px 15px 15px;
+
+    position: relative;
+
+    .hover-link {
+      position: absolute;
+      transition: 1s ease;
+      margin: 1em;
+      left: .5em;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.548);
+      border-radius: 0px 15px 15px 15px;
+      height: .1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      span {
+        padding: 0;
+        background-color: $secondary-color;
+        border-radius: 0px 15px 15px 15px;
+        font-family: laviossa;
+        color: white;
+        height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .pic {
+    height: 100% !important;
+    max-height: 395px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: .1em;
+  }
+
+  .service-page-ul {
+    padding: 0;
+    margin: .6em 0 0 0;
+
+    li {
+      padding-bottom: .2em;
+    }
+  }
+}
+
+.image-container:hover {
+
+  .hover-link {
+
+    transition: 1s ease;
+    height: 90%;
+
+    span {
+      height: auto;
+      padding: 1em;
+    }
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 450px) {
+  .service-page-node {
+    .image-container {
+      max-width: 98%;
+
+    }
+
+    .pic {}
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .service-page-node {
+    display: flex;
+    min-width: 520px;
+    max-width: 950px;
+    margin: 2em auto;
+    padding: 2em;
+
+    .text-container {}
+
+    gap: 2.5em;
+    // width: fit-content;
+
+    .image-container {
+      max-width: 60%;
+    }
+
+    .image-container {
+      margin-bottom: 0em;
+
+    }
+
+    .service-page-ul {
+      font-size: larger;
+
+      li {
+        padding-bottom: .5em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .service-page-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 2300px;
+    margin: 0 auto;
+
+    .service-page-node {
+      min-width: 1014px;
+    }
+  }
+}

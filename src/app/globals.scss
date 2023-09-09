@@ -1,0 +1,140 @@
+@import './styles/navbar';
+@import './styles/homePage';
+@import './styles/hamburger';
+@import './styles//ServiceCard';
+@import './styles//aboutUs';
+@import './styles//testimonials';
+@import './styles/footer';
+@import './styles/contactUs';
+@import './styles/quote';
+@import './styles/carousel';
+@import './styles/sandbox';
+@import './styles/servicesPage';
+
+
+//-------------FONTS------------------//
+@font-face {
+  font-family: gotham;
+  src: url("./styles/fonts/GOTHAM-BOOK.OTF");
+}
+
+@font-face {
+  font-family: rubik-semi;
+  src: url("./styles/fonts/RUBIK-VARIABLEFONT_WGHT.TTF");
+}
+
+@font-face {
+  font-family: laviossa;
+  src: url("./styles/fonts/LAVIOSSA-MEDIUM.OTF");
+}
+
+//------------VARIABLES--------------//
+$navbar-width: 110px;
+$base-color: #0182CB;
+$secondary-color: #1298E3;
+
+body {
+  margin: 0;
+}
+
+main {
+  padding-top: $navbar-width;
+}
+
+.sub-page {
+  padding: 10em 3em 3em 3em;
+  background-color: whitesmoke;
+}
+
+h2 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+  display: block;
+}
+
+.page-head {
+  font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+}
+
+.topper {
+  font-size: clamp(0.8125rem, 1.6vw, 1rem);
+  font-family: rubik-semi;
+  color: darkgray;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+.card-group {
+  padding-left: 0;
+}
+
+.contact-icon {
+  display: flex;
+}
+
+.picture {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+li {
+  list-style-type: none
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-banner {
+  position: relative;
+  overflow: hidden;
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    opacity: .8;
+    height: 100%;
+    width: 100%;
+    background: rgb(11, 99, 179);
+    background: linear-gradient(90deg, rgba(11, 99, 179, 0.9389005602240896) 0%, rgba(18, 152, 227, 1) 14%, rgba(244, 244, 245, 0) 100%);
+  }
+
+  h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    padding-left: 2rem;
+    font-size: clamp(3.1375rem, 7.4vw, 4.8125rem);
+    font-family: rubik-semi;
+    color: white;
+  }
+}
+
+.faqs li {
+  list-style-type: circle !important;
+  padding-bottom: .5em;
+}
+
+.quote-button,
+.quote-button2 {
+  transition: .3s ease;
+}
+
+.quote-button:hover {
+
+  background-color: $secondary-color !important;
+  color: white !important;
+}
+
+.quote-button2:hover {
+  background-color: $base-color !important;
+  color: white !important;
+  transform: scale(1.1);
+}
