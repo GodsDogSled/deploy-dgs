@@ -89,8 +89,9 @@ export default function Home() {
 
         <div className="picture">
           <Image
+            priority
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{ objectFit: 'cover', transform: "scaleX(-1)" }}
             alt="hero image cleaning service"
             src={"/landingImage.jpeg"}
@@ -116,7 +117,6 @@ export default function Home() {
           <Image
             height={600}
             width={620}
-            // sizes="100vw"
             style={{ padding: "6em", maxWidth: "785px", margin: "0 auto" }}
             alt="hero image cleaning service"
             src={hands}
