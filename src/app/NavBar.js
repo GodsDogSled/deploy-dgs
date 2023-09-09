@@ -120,7 +120,6 @@ export default function NavBar() {
             <li><Link onClick={handleHamburger} href="/about">About</Link></li>
             <li><Link onClick={handleHamburger} href="/services">Services</Link></li>
             <li><Link onClick={handleHamburger} href="/faqs">FAQs</Link></li>
-            <li><Link onClick={handleHamburger} href="/reviews">Reviews</Link></li>
             <li><Link onClick={handleHamburger} href="/contact">Contact</Link></li>
             <li>
               <Link target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
