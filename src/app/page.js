@@ -33,7 +33,7 @@ export default function Home() {
       pic: "/movein.jpeg"
     },
     {
-      Service: "Air BnB",
+      Service: "Vacation Rental",
       pic: "/bnb.jpeg"
     },
   ]
@@ -73,7 +73,7 @@ export default function Home() {
       <section className="hero section">
         <div className="content">
           <span className="topper">100% Satisfaction</span>
-          <h1>Trusted House Cleaning <span className="color">Professionals</span></h1>
+          <h1>Trusted Cleaning <span className="color">Professionals</span></h1>
           <p>Spend more time on the important things. Leave the cleaning to us at DGS Cleaning Services with peace of mind guaranteed.</p>
 
           <div className="button-group">

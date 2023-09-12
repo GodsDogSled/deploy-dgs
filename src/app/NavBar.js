@@ -117,10 +117,12 @@ export default function NavBar() {
         <div className="ul-wrapper">
           <ul className="nav-list">
             <li><Link onClick={handleHamburger} href="/">Home</Link></li>
+            <li><Link onClick={handleHamburger} href="/contact">Contact</Link></li>
             <li><Link onClick={handleHamburger} href="/about">About</Link></li>
             <li><Link onClick={handleHamburger} href="/services">Services</Link></li>
+            <li><Link onClick={handleHamburger} href="/quote">Get a Quote</Link></li>
             <li><Link onClick={handleHamburger} href="/faqs">FAQs</Link></li>
-            <li><Link onClick={handleHamburger} href="/contact">Contact</Link></li>
+
             <li>
               <Link target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
               <Link target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>

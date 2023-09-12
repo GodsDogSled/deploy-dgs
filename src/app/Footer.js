@@ -38,10 +38,10 @@ export default function Footer() {
               <Link href={"/services"}>Move In/Out Cleaning</Link>
             </li>
             <li>
-              <Link href={"/services"}>Deep Cleaning</Link>
+              <Link href={"/services"}>Vacation Rentals</Link>
             </li>
             <li>
-              <Link href={"/services"}>Appliances</Link>
+              <Link href={"/services"}>Post Construction</Link>
             </li>
           </ul>
         </div>

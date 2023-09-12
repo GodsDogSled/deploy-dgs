@@ -28,7 +28,7 @@
 
     li {
       list-style: none;
-      padding: clamp(2.5rem, 6.3vw, 4rem);
+      padding: clamp(2.5rem, 6.3vw, 2rem);
       box-sizing: border-box;
       background-color: whitesmoke;
       display: flex;
@@ -39,11 +39,11 @@
       transition: filter .3s;
 
       h2 {
-        font-size: 1.5625rem;
+        font-size: 1.6625rem;
         font-weight: 700;
         text-align: center;
         line-height: 1.2em;
-        margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+        margin: 1em;
         display: block;
       }
 
@@ -57,6 +57,14 @@
         font-size: 15px;
       }
     }
+  }
+}
+
+.service {
+  .img-container {
+    max-width: 300px;
+    max-height: 200px;
+
   }
 }
 
@@ -143,8 +151,6 @@
 @media only screen and (min-width: 74rem) {
   .services {
 
-    img {}
-
     ul {
       display: flex;
       flex-direction: row;
@@ -155,14 +161,20 @@
       }
 
       li {
-        padding: clamp(2.5rem, 6.3vw, 4rem);
+        padding: clamp(2.5rem, 6.3vw, 2rem);
         width: 25%;
         font-size: 1.5625rem;
 
       }
     }
 
+    .service {
+      .img-container {
+        max-width: 400px;
+        max-height: 200px;
 
+      }
+    }
   }
 }
 
@@ -208,6 +220,23 @@
         max-width: 25.8125rem;
         min-height: 380px;
       }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 2400px) {
+  .services .service {
+    .img-container {
+      max-width: 500px;
+      max-height: 300px;
+
+    }
+  }
+
+  .services {
+    ul li {
+      padding: clamp(2.5rem, 6.3vw, 4rem);
     }
   }
 }
