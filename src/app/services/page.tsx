@@ -43,7 +43,7 @@ export default async function Page() {
       <div className="service-page-container">
         {services.map((service, i) => {
           return (
-            <ServicePageNode key={i} photo={service.photo} room={service.title} list={service.list} />
+            <ServicePageNode key={i} order={i} photo={service.photo} room={service.title} list={service.list} />
           )
         })}
       </div>
