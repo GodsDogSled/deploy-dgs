@@ -9,6 +9,7 @@ import window from "./images/window.jpeg";
 import mop from "./images/swifer.jpeg";
 import hands from "./images/Transparent Bottole.png";
 import EmblaCarousel from "../components/EmblaCarousel";
+import Head from 'next/head';
 
 
 
@@ -70,6 +71,16 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>
+          DGS Cleaning - Cleaning Services | Greater Vancouver Area
+        </title>
+        <meta
+          name="dgs cleaning vancouver"
+          content="Your local cleaning solution for every mess "
+          key="desc"
+        />
+      </Head>
       <section className="hero section">
         <div className="content">
           <span className="topper">100% Satisfaction</span>
