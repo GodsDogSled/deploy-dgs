@@ -6,7 +6,7 @@
   text-align: center;
   width: 100%;
   max-width: 32.625rem;
-  padding: clamp(4.5rem, 3.82vw, 8.75rem) 1rem clamp(4.5rem, 3.82vw, 8.75rem);
+  padding: clamp(4.5rem, 3.82vw, 8.75rem) 0 clamp(4.5rem, 3.82vw, 8.75rem) 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@
       }
     }
 
-    h1,
+
     p {
       max-width: 80%;
     }
@@ -111,7 +111,16 @@
 
     .content {
       justify-content: center;
-      transform: scale(1.1);
+      transform: scale(1.2);
+      max-width: 700px;
+    }
+
+    h1 {
+      width: 80%;
+    }
+
+    p {
+      width: 65%;
     }
   }
 

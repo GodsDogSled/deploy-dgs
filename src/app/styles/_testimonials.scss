@@ -60,11 +60,13 @@
   overflow: hidden;
   max-width: 800px;
   margin: 0 auto;
+
 }
 
 .embla__container {
   display: flex;
   max-width: 900px;
+
 }
 
 .embla__slide {
@@ -122,8 +124,8 @@
     .content {
       align-items: flex-start;
       text-align: left;
-      width: 60%;
-      padding: clamp(5.5rem, 3.7vw, 8.70rem);
+      width: 70%;
+      padding-left: clamp(5.5rem, 3.7vw, 3.70rem);
     }
 
     .card-group {

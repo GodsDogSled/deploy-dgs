@@ -94,7 +94,7 @@ export default function Home() {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{ objectFit: 'cover', transform: "scaleX(-1)" }}
             alt="hero image cleaning service"
-            src={"/landingImage.jpeg"}
+            src={"/daniLiving.jpeg"}
           />
         </div>
       </section>
@@ -119,7 +119,7 @@ export default function Home() {
             width={620}
             style={{ padding: "6em", maxWidth: "785px", margin: "0 auto" }}
             alt="hero image cleaning service"
-            src={hands}
+            src={"/danikitchen.jpeg"}
           />
         </div>
 

@@ -90,7 +90,7 @@ export default function QuotePage() {
         <form onSubmit={formik.handleSubmit} className="contact-form" method="post">
           {messageSent ?
             <div className="message-sent">
-              <p >Thank you for reaching out.<br /> Will will be in touch with in 24hrs with your estimate.</p>
+              <p >Thank you for reaching out.<br /> Will will be in touch within the next<br /> 24hrs .</p>
               <button className="contact-button" onClick={() => { setMessageSent(false) }}></button>
             </div>
             :
