@@ -21,6 +21,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>DGS Cleaning - Cleaning Services | Greater Vancouver Area</title>
+        <meta name="description" content="Greater Vancouver's most reliable cleaning service." />
+        <link rel='icon' href='/favicon.ico' />
+      </head>
       <body className={`${inter.className}  `}>
 
         <NavBar />
