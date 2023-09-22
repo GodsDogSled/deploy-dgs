@@ -101,14 +101,6 @@ export default function Home() {
 
         <div className="picture">
           <LandingCarousel />
-          {/* <Image
-            priority
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ objectFit: 'cover', transform: "scaleX(-1)" }}
-            alt="hero image cleaning service"
-            src={"/daniLiving.jpeg"}
-          /> */}
         </div>
       </section>
 

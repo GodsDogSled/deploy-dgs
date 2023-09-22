@@ -1,52 +1,59 @@
 import PageHeader from "../../components/PageHeader";
 import ServicePageNode from "../../components/ServicePageNode";
+import ServiceCard from "@/components/ServiceCard";
 
 export default async function Page() {
 
+
+
   const services = [
     {
-      photo: "/bedroom.jpg",
-      title: "Bedrooms",
-      list: ["Sweep floors", "Make Beds", "Mirrors", "Empty Trash", "Mop Floors", "Dust Furniture", "Vacuum Floors", "Baseboards", "Ceiling Fans"]
+      Service: "Deep Cleaning",
+      pic: "/deepClean.jpeg"
     },
     {
-      photo: "/kitchen.jpg",
-      title: "Kitchen",
-      list: ["Stovetop", "In/Outside Appliances", "Backsplash", "Sink", "Outside of Stove Hood", "Sweep/Mop Floors", "Polish Metal Surfaces", "Shelves", "Baseboards", "Ceiling Fans", "Counter Tops"]
+      Service: "Post Construction",
+      pic: "/construct.jpeg"
     },
     {
-      photo: "/officeSpace.jpg",
-      title: "Office Space",
-      list: ["Glass Surfaces", "Mirrors", "Shelves", "Sweep/Mop Floors", "Dusting of Furniture", "Vacuum Floors/Rugs", "Baseboards", "Ceiling Fans"]
+      Service: "Move In/Out",
+      pic: "/movein.jpeg"
     },
     {
-      photo: "/bathroom.jpg",
-      title: "Bathrooms",
-      list: ["Shower", "Tub", "Polish Faucets", "Mirrors", "Toilets", "Counters", "Glass Surfaces", "Shelves", "Sink", "Baseboards", "Sweep/Mop Floors"]
+      Service: "Short-term Rentals",
+      pic: "/bnb.jpeg"
     },
-    {
-      photo: "/livingroom.jpg",
-      title: "Living/Dining Room",
-      list: ["Glass Surfaces", "Mirrors", "Shelves", "Sweep/Mop Floors", "Dusting of Furniture", "Vacuum Floors/Rugs", "Baseboards", "Ceiling Fans"]
-    },
-    {
-      photo: "/laundry.jpg",
-      title: "Laundry Room",
-      list: ["Outside of Appliances", "Glass Surfaces", "Sinks", "Sweep/Mop Floors", "Mirrors", "Vacuum Rugs", "Baseboards", "Dusting of Furniture"]
-    },
-
   ]
 
   return (
     <>
       <PageHeader title={"Services"} />
-      <div className="service-page-container">
+      <section style={{ textAlign: "center", margin: "0 auto", padding: " 4em 0 4em 0em", width: "50%" }}>
+        <span className="topper">CLEANING SOLUTIONS</span>
+        <h2>What We Offer</h2>
+        <p>Experience the transformative difference a professionally cleaning can make to your home and wellbeing.
+          Our Eco friendly cleaing solutions not only assure a thorough clean but also safeguard your family and the environment.</p>
+      </section>
+      {/* <div className="service-page-container">
         {services.map((service, i) => {
           return (
             <ServicePageNode key={i} order={i} photo={service.photo} room={service.title} list={service.list} />
           )
         })}
-      </div>
+      </div> */}
+      <section className="services section" style={{ marginBottom: "6em" }}>
+        <ul id="services">
+          {services.map((service, i) => {
+            let blue = false;
+            if (i % 2 == 0) blue = true;
+            return (
+              <ServiceCard key={i} service={service.Service} picture={service.pic} isBlue={blue} nth={i} />
+            )
+          })}
+        </ul>
+      </section>
+
+
     </>
   )
 }

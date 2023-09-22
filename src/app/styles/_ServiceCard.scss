@@ -45,6 +45,7 @@
         line-height: 1.2em;
         margin: 1em;
         display: block;
+        min-height: 64px;
       }
 
       a {
@@ -105,6 +106,7 @@
 
     h2 {
       font-size: 1.25rem;
+
     }
 
     p {
@@ -237,6 +239,10 @@
   .services {
     ul li {
       padding: clamp(2.5rem, 6.3vw, 4rem);
+    }
+
+    h2 {
+      min-height: 0 !important;
     }
   }
 }
