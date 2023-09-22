@@ -21,7 +21,7 @@ export default async function Page() {
     },
     {
       question: "Are you pet friendly?",
-      answer: "We are! However, if your pet is unattended when we are entering your home please have them put away or let us know if they are prone to escape or need to be put in a room while bringing in and taking out equipment."
+      answer: "We are! However, if your pet is unattended when we are entering your home please have them put away in a secure location for the duration of the cleaning. While we love animals, sometimes they don't feel the same way. An agiatated pet can quickly become a hazard to our cleaners and prevent them from providing service to the DGS standard "
     },
     {
       question: "What is your cancellation/rescheduling policy?",

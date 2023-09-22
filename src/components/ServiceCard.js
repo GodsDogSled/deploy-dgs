@@ -19,7 +19,7 @@ export default function ServiceCard({ service, isBlue, nth, picture }) {
         <Image fill sizes="100vw" style={{ objectFit: "cover" }} src={picture} />
       </div>
       <h2>{service}</h2>
-      <Link className="quote-button2" href={'/quote'} id={(!blue ? "blue" : '')} >Get a Quote</Link>
+      <Link className="quote-button2" href={'/quote'} id={(!blue ? "blue" : '')} >More Info</Link>
     </li>
   )
 }

@@ -10,6 +10,7 @@ import mop from "./images/swifer.jpeg";
 import hands from "./images/Transparent Bottole.png";
 import EmblaCarousel from "../components/EmblaCarousel";
 import Head from 'next/head';
+import LandingCarousel from '../components/landingCarousel';
 
 
 
@@ -34,7 +35,7 @@ export default function Home() {
       pic: "/movein.jpeg"
     },
     {
-      Service: "Vacation Rental",
+      Service: "Short-term Rentals",
       pic: "/bnb.jpeg"
     },
   ]
@@ -99,14 +100,15 @@ export default function Home() {
         </div>
 
         <div className="picture">
-          <Image
+          <LandingCarousel />
+          {/* <Image
             priority
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             style={{ objectFit: 'cover', transform: "scaleX(-1)" }}
             alt="hero image cleaning service"
             src={"/daniLiving.jpeg"}
-          />
+          /> */}
         </div>
       </section>
 
@@ -138,7 +140,7 @@ export default function Home() {
         <div className="content about">
           <span className="topper">WHO WE ARE</span>
           <h2>About DGS Cleaning Services</h2>
-          <p>Welcome to DGS Cleaning Services, the premeir cleaning service in the greater vancouver area. We proudly serve in and around Vancouver, The North Shore, Burnaby, Richmond, Surrey, and more.  </p>
+          <p>Welcome to DGS Cleaning Services, the premier cleaning service in the greater vancouver area. We proudly serve in and around Vancouver, The North Shore, Burnaby, Richmond, Surrey, and more.  </p>
           <p>
             Our team of professional maids is passionate about delivering outstanding cleaning services. With meticulous attention to detail, we ensure that every nook and cranny of your home is thoroughly cleaned. We take pride in our work and strive to maintain our reputation as the most trusted cleaning service in the greater vancovuer area.
           </p>
