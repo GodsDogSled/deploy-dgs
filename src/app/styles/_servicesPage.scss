@@ -125,6 +125,7 @@
 @media only screen and (min-width: 2200px) {
   .service-page-container {
     display: grid;
+    gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     max-width: 2300px;
     margin: 0 auto;

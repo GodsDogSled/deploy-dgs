@@ -50,8 +50,10 @@ export default function Page({ params }) {
       <PageHeader title={header} />
 
       <div className="service-page-container" style={{ width: "fit-content", margin: "0 auto ", paddingTop: "4em" }}>
-        <span className='topper'>DETAILS</span>
-        <h2>{"Whats Included"}</h2>
+        <div className="title">
+          <span className='topper'>DETAILS</span>
+          <h2>{"Whats Included"}</h2>
+        </div>
         {services.map((service, i) => {
           return (
             <ServicePageNode key={i} order={i} photo={service.photo} room={service.title} list={service.list} />
