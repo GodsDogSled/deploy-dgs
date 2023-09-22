@@ -1,31 +1,29 @@
 "use client"
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 
 export default function LandingCarousel() {
+  const [imgSrc, setImgSrc] = useState("/bathroom.jpg");
+  const indexRef = useRef(1);
 
-  const srcs = ["/daniLiving.jpeg", "/bathroom.jpg", "/DanielaKitchen.jpg"];
-  const [imgSrc, setImgSrc] = useState("/daniLiving.jpeg");
-  let ranOnce;
-  let srcIndex;
+  useEffect(() => {
 
-  if (!ranOnce) {
-    srcIndex = 0;
-  }
+    const srcs = ["/bathroom.jpg", "/daniLiving.jpeg", "/DanielaKitchen.jpg"];
 
+    //Implementing the setInterval method
+    const interval = setInterval(() => {
+      if (indexRef.current > 2) {
+        indexRef.current = 0;
+      }
+      setImgSrc(srcs[indexRef.current]);
+      indexRef.current++;
+    }, 4000);
 
-  setInterval(function () {
-
-    setImgSrc(srcs[srcIndex]);
-
-    srcIndex++;
-    if (srcIndex > 2) { srcIndex = 0 };
-
-    ranOnce = true;
-
-  }, 1000);
+    //Clearing the interval
+    return () => clearInterval(interval);
+  }, []);
 
 
 
