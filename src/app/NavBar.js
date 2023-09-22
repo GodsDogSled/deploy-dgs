@@ -55,7 +55,7 @@ export default function NavBar() {
   return (
     <>
       <header>
-        <Link className="logo" href="/"><Logo></Logo></Link>
+        <Link ariaLabel="Logo Home Link" className="logo" href="/"><Logo></Logo></Link>
         <div className="stacking-bars">
 
           <ul className="top-bar ">
@@ -100,8 +100,8 @@ export default function NavBar() {
               <div className="right-side">
                 <Link href={"/quote"} className="quote quote-button" >Get a Quote</Link>
                 <div className="socials">
-                  <Link target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
-                  <Link target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>
+                  <Link ariaLabel="dgs instagram link" target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
+                  <Link ariaLabel="dgs facebook link" target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>
                 </div>
               </div>
             </nav>
@@ -124,8 +124,8 @@ export default function NavBar() {
             <li><Link onClick={handleHamburger} href="/faqs">FAQs</Link></li>
 
             <li>
-              <Link target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
-              <Link target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>
+              <Link ariaLabel="dgs instagram link" target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
+              <Link ariaLabel="dgs facebook link" target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>
             </li>
 
           </ul>

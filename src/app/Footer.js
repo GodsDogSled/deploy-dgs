@@ -1,12 +1,12 @@
 import Link from "next/link"
-import Logo from "@/components/Logo"
+import Logo from "../components/Logo";
 import Image from "next/image"
 
 export default function Footer() {
   return (
     <footer>
       <section className="top-section">
-        <Link className="logo-footer" href="/"><Logo /></Link>
+        <Link ariaLabel="Logo Home Link" className="logo-footer" href="/"><Logo></Logo></Link>
         <div>
           <h2>Quick Links</h2>
           <ul>
