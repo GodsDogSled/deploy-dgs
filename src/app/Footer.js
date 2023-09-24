@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <section className="top-section">
-        <Link ariaLabel="Logo Home Link" className="logo-footer" href="/"><Logo></Logo></Link>
+        <Link aria-label="Logo Home Link" className="logo-footer" href="/"><Logo></Logo></Link>
         <div>
           <h2>Quick Links</h2>
           <ul>

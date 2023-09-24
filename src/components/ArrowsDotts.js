@@ -4,7 +4,7 @@ export const DotButton = (props) => {
   const { children, ...restProps } = props
 
   return (
-    <button ariaLabel="slide index button" type="button" {...restProps}>
+    <button aria-label="slide index button" type="button" {...restProps}>
       {children}
     </button>
   )
@@ -15,7 +15,7 @@ export const PrevButton = (props) => {
 
   return (
     <button
-      ariaLabel="previous slide"
+      aria-label="previous slide"
       className="embla__button embla__button--prev"
       type="button"
       {...restProps}
@@ -38,7 +38,7 @@ export const NextButton = (props) => {
     <button
       className="embla__button embla__button--next"
       type="button"
-      ariaLabel="next slide"
+      aria-label="next slide"
       {...restProps}
     >
       <svg className="embla__button__svg" viewBox="0 0 532 532">
