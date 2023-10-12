@@ -32,7 +32,7 @@ export default async function Page() {
         <span className="topper">CLEANING SOLUTIONS</span>
         <h2>What We Offer</h2>
         <p>Experience the transformative difference a professionally cleaning can make to your home and wellbeing.
-          Our Eco friendly cleaing solutions not only assure a thorough clean but also safeguard your family and the environment.</p>
+          Our Eco friendly cleaning solutions not only assure a thorough clean but also safeguard your family and the environment.</p>
       </section>
       {/* <div className="service-page-container">
         {services.map((service, i) => {

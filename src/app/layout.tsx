@@ -25,6 +25,14 @@ export default function RootLayout({
         <title>DGS Cleaning - Cleaning Services | Greater Vancouver Area</title>
         <meta name="description" content="Greater Vancouver's most reliable cleaning service." />
         <link rel='icon' href='/favicon.ico' />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-LGD53FM97F');
+        </script>
       </head>
       <body className={`${inter.className}  `}>
 
