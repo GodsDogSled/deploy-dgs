@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 import { Container, SSRProvider } from "../components/bootstrap"
 import NavBar from './NavBar';
 import Footer from './Footer';
-import Script from 'next/script'
+import Script from 'next/script';
+import Head from "next/head";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,21 +23,29 @@ export default function RootLayout({
 
   return (
     <html >
-      <head>
-        <title>DGS Cleaning - Cleaning Services | Greater Vancouver Area</title>
-        <meta name="description" content="Greater Vancouver's most reliable cleaning service." />
-        <link rel='icon' href='/favicon.ico' />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
-        <Script id="google-analytics">
-          {`
+      <Head>
+        <title>
+          DGS Cleaning - Cleaning Services | Greater Vancouver Area
+        </title>
+        <meta
+          name="dgs cleaning vancouver"
+          content="Your local cleaning solution for every mess "
+          key="desc"
+        />
+      </Head>
+
+      <link rel='icon' href='/favicon.ico' />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
+      <Script id="google-analytics">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
           gtag('config', 'G-LGD53FM97F');
         `}
-        </Script>
-      </head>
+      </Script>
+
       <body className={`${inter.className}  `}>
 
         <NavBar />
