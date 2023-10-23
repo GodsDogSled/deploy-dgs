@@ -98,7 +98,7 @@ export default function NavBar() {
 
               </ul>
               <div className="right-side">
-                <Link href={"/booking"} className="quote quote-button" >Book Now</Link>
+                <Link href={"/quote"} className="quote quote-button" >Get a Quote</Link>
                 <div className="socials">
                   <Link aria-label="dgs instagram link" target="_blank" href="https://www.instagram.com/dgs_cleaningservices/"><Instagram /></Link>
                   <Link aria-label="dgs facebook link" target="_blank" href="https://www.facebook.com/p/DGS-Cleaning-Services-100087457822323/"><Facebook /></Link>

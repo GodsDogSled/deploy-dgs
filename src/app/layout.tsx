@@ -1,5 +1,6 @@
 import "./globals.scss"
 import type { Metadata } from 'next'
+import React from "react"
 import { Inter } from 'next/font/google'
 import { Container, SSRProvider } from "../components/bootstrap"
 import NavBar from './NavBar';
@@ -10,7 +11,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'DGS Cleaning',
+  title: 'DGS Cleaning | Greater Vancouver',
   description: 'Cleaning Servive Website',
 }
 

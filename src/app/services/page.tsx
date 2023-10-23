@@ -52,8 +52,6 @@ export default async function Page() {
           })}
         </ul>
       </section>
-
-
     </>
   )
 }
