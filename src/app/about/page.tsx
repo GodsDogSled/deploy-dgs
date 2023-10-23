@@ -3,6 +3,7 @@ import woman from "../images/aboutUs.jpg";
 import Image from "next/image";
 import ContactIcon from "../../components/ContactIcon";
 import Link from "next/link";
+import React from "react";
 
 export default async function Page() {
 
@@ -52,7 +53,7 @@ export default async function Page() {
               />
             </div>
 
-            <Link href={"#"} className="quote">
+            <Link href={"/quote"} className="quote-button">
               Get a Quote
             </Link>
           </div>

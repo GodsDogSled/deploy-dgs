@@ -75,17 +75,19 @@
     padding: 1em 1em 3em 3rem;
     display: flex;
     flex-direction: column;
+    gap: 2em;
   }
 
-  .quote {
-    align-self: left;
+  .quote-button {
+    align-self: center;
     padding: .75em;
     margin-top: 2em;
     background-color: white;
     border-radius: 0 15px 15px 15px;
     font-family: laviossa;
     color: $base-color;
-    width: fit-content
+    width: fit-content;
+    transform: scale(1.5);
   }
 
   .contact-icon {
