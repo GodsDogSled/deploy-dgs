@@ -31,7 +31,7 @@ export default async function Page() {
       <section style={{ textAlign: "center", margin: "0 auto", padding: " 4em 0 4em 0em", width: "50%" }}>
         <span className="topper">CLEANING SOLUTIONS</span>
         <h2>What We Offer</h2>
-        <p>Experience the transformative difference a professionally cleaning can make to your home and wellbeing.
+        <p>Experience the transformative difference a professional cleaning can make to your home and well-being.
           Our Eco friendly cleaning solutions not only assure a thorough clean but also safeguard your family and the environment.</p>
       </section>
       {/* <div className="service-page-container">
