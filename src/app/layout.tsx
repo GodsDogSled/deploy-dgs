@@ -23,7 +23,7 @@ export default function RootLayout({
 
 
   return (
-    <html >
+    <html lang="en" >
       <Head>
         <title>
           DGS Cleaning - Cleaning Services | Greater Vancouver Area
