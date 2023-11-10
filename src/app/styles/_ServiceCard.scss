@@ -69,9 +69,9 @@
   }
 }
 
-#blue {
-  background-color: $secondary-color;
-  color: white;
+#services .blue {
+  background-color: $secondary-color ;
+  // color: white;
 
   a {
     background-color: white;
@@ -85,8 +85,6 @@
 .complete-services {
   text-align: left;
   background-color: whitesmoke;
-
-
 
   .topper,
   h2,
