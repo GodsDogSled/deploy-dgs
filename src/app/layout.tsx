@@ -42,7 +42,7 @@ export default function RootLayout({
 
 
       <body className={`${inter.className}  `}>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
+        {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
         <Script id="google-analytics">
           {`
       window.dataLayer = window.dataLayer || [];
@@ -51,7 +51,7 @@ export default function RootLayout({
 
       gtag('config', 'G-LGD53FM97F');
     `}
-        </Script>
+        </Script> */}
 
         <NavBar />
         <main  >
