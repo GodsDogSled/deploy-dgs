@@ -1,9 +1,8 @@
 "use client"
 
-import Image from "next/image"
-import a from "../../public/hotel_8634407.png"
 
-import Link from "next/link";
+
+
 
 export default function TestimonailCard({ testimonial, name }) {
 

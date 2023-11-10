@@ -17,7 +17,7 @@ export default function ServiceCard({ service, isBlue, nth, picture }) {
             width: '100%',
 
           }} /> */}
-        <Image priority={true} alt={service} fill sizes="100vw" style={{ objectFit: "cover" }} src={picture} />
+        <Image priority={true} alt={service} fill sizes="(max-width: 768px) 60vw, (max-width: 1200px) 18vw, 10vw" style={{ objectFit: "cover" }} src={picture} />
       </div>
       <h2>{service}</h2>
       <Link href={{ pathname: `/service-info/${paramLink}`, query: { image: picture } }} className={(!blue ? "quote-button2 blue" : 'quote-button2')} >More Info</Link>
