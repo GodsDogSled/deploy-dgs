@@ -13,19 +13,21 @@
 
 
 //-------------FONTS------------------//
-@font-face {
-  font-family: gotham;
-  src: url("./styles/fonts/GOTHAM-BOOK.OTF");
-}
+// @font-face {
+//   font-family: gotham;
+//   src: url("./styles/fonts/GOTHAM-BOOK.OTF");
+// }
 
 @font-face {
   font-family: rubik-semi;
   src: url("./styles/fonts/RUBIK-VARIABLEFONT_WGHT.TTF");
+  font-display: swap;
 }
 
 @font-face {
   font-family: laviossa;
   src: url("./styles/fonts/GOTHAM-BOOK.OTF");
+  font-display: swap;
 }
 
 //------------VARIABLES--------------//
