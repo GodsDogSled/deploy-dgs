@@ -115,7 +115,7 @@ export default function ContactPage() {
         <section className="map-container" >
 
 
-          {/* <GoogleMap
+          <GoogleMap
             zoom={9}
             center={{ lat: 49.210859388486135, lng: -122.94293277359498 }}
             mapContainerClassName="map"
@@ -123,7 +123,7 @@ export default function ContactPage() {
             <Polygon
               path={path}
             />
-          </GoogleMap> */}
+          </GoogleMap>
         </section>
 
         <section className="contact-us">

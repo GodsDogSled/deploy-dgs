@@ -10,7 +10,7 @@ export default function ServiceCard({ service, isBlue, nth, picture }) {
   if (service.includes("/")) { paramLink = paramLink.replace('/', '') }
 
   return (
-    <li className="service " id={(blue ? "blue" : '')} >
+    <li className={(blue ? "service blue" : 'service')} >
       <div style={{ borderRadius: "0 40px 40px 40px", position: "relative", width: "100%", height: "11em", overflow: "hidden" }} className="img-container">
         {/* <Image fill src={picture} alt={'temp icon'} sizes="20vw"
           style={{
@@ -20,7 +20,7 @@ export default function ServiceCard({ service, isBlue, nth, picture }) {
         <Image alt={service} fill sizes="100vw" style={{ objectFit: "cover" }} src={picture} />
       </div>
       <h2>{service}</h2>
-      <Link className="quote-button2" href={{ pathname: `/service-info/${paramLink}`, query: { image: picture } }} id={(!blue ? "blue" : '')} >More Info</Link>
+      <Link href={{ pathname: `/service-info/${paramLink}`, query: { image: picture } }} className={(!blue ? "quote-button2 blue" : 'quote-button2')} >More Info</Link>
     </li>
   )
 }
