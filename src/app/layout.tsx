@@ -22,6 +22,8 @@ export default function RootLayout({
 }) {
 
 
+
+
   return (
     <html lang="en" >
       <Head>
@@ -33,21 +35,23 @@ export default function RootLayout({
           content="Your local cleaning solution for every mess "
           key="desc"
         />
+
       </Head>
 
       <link rel='icon' href='/favicon.ico' />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-LGD53FM97F');
-        `}
-      </Script>
+
 
       <body className={`${inter.className}  `}>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-LGD53FM97F"></Script>
+        <Script id="google-analytics">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LGD53FM97F');
+    `}
+        </Script>
 
         <NavBar />
         <main  >

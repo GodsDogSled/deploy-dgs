@@ -30,7 +30,7 @@ export default function LandingCarousel() {
   return (
     <>
       <div className="landing-carousel">
-        <Image fill sizes="50vw" src={imgSrc} alt={imgSrc}></Image>
+        <Image priority={true} fill sizes="50vw" src={imgSrc} alt={imgSrc}></Image>
       </div>
     </>
   )
