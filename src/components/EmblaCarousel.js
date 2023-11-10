@@ -86,13 +86,13 @@ const EmblaCarousel = (props) => {
     <>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
+          <ul className="embla__container">
             {testimonials.map((x, i) => {
               return (
                 <TestimonialCard key={i} testimonial={x.testimonial} name={x.name} />
               )
             })}
-          </div>
+          </ul>
         </div>
 
         <div className="embla__buttons mobile-hide-buttons">
