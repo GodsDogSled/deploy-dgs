@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" >
       <Head>
         <title>
-          DGS Cleaning - Cleaning Services | Greater Vancouver Area
+          DGS Cleaning Services | Greater Vancouver Area
         </title>
         <meta
           name="dgs cleaning vancouver"

@@ -12,11 +12,6 @@ export default function ServiceCard({ service, isBlue, nth, picture }) {
   return (
     <li className={(blue ? "service blue" : 'service')} >
       <div style={{ borderRadius: "0 40px 40px 40px", position: "relative", width: "100%", height: "11em", overflow: "hidden" }} className="img-container">
-        {/* <Image fill src={picture} alt={'temp icon'} sizes="20vw"
-          style={{
-            width: '100%',
-
-          }} /> */}
         <Image priority={true} alt={service} fill sizes="(max-width: 768px) 60vw, (max-width: 1200px) 18vw, 10vw" style={{ objectFit: "cover" }} src={picture} />
       </div>
       <h2>{service}</h2>
