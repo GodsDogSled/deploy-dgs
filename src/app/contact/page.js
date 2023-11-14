@@ -97,11 +97,12 @@ export default function ContactPage() {
 
   })
 
+  const AnyReactComponent = ({ text }) => <div className="marker">{text}</div>;
 
 
   //--Load the google map api
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyB6g0JjxtShEm_LuF7sh8jhtGjTUvzMUxg",
+    googleMapsApiKey: "AIzaSyAxRbm42AMKJ2wBB1q-iGi-Vp3ipq1jTNg",
   });
 
   if (!isLoaded) return <div>Loading...</div>
@@ -119,9 +120,15 @@ export default function ContactPage() {
             zoom={9}
             center={{ lat: 49.210859388486135, lng: -122.94293277359498 }}
             mapContainerClassName="map"
+            options={{ streetViewControl: false, zoomControl: false, gestureHandling: "none" }}
           >
             <Polygon
               path={path}
+            />
+            <AnyReactComponent
+              lat={49.210859388486135}
+              lng={-122.94293277359498}
+              text="Area of Service"
             />
           </GoogleMap>
         </section>
