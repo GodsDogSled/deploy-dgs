@@ -4,8 +4,16 @@ footer {
   background: radial-gradient(circle, rgba(11, 99, 179, 0.9389005602240896) 31%, rgba(18, 152, 227, 1) 83%, rgba(18, 152, 227, 1) 100%);
   padding-bottom: 0;
 
+  .whatsapp-logo {
+    padding: 0 !important;
+  }
+
   a {
     width: 100%;
+    min-height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
   }
 
   .logo-footer {
