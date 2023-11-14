@@ -44,12 +44,12 @@ export default async function Page() {
               <ContactIcon
                 img={"https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg"}
                 header={"Reach Out"}
-                info={"123-456-7890"}
+                info={"778-558-6341"}
               />
               <ContactIcon
                 img={"https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg"}
                 header={"Send us a Message"}
-                info={"email@email.com"}
+                info={"dgscservices@gmail.com"}
               />
             </div>
 
