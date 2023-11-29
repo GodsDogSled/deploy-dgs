@@ -33,6 +33,7 @@
         padding: .9em;
         border-radius: 0 15px 15px 15px;
         border: 2px solid $secondary-color;
+        min-height: 43px;
 
         :focus {
           color: $base-color;
