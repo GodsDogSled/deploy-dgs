@@ -53,6 +53,7 @@ export default function QuotePage() {
         size: values.size,
         number_bedrooms: values.bedrooms,
         number_bathrooms: values.bathrooms,
+        number_kitchens: values.kitchens,
         pets: values.pets,
         extras: values.extras
       };
@@ -78,6 +79,7 @@ export default function QuotePage() {
   const spaceOptions = ["0-599", "1500-1799", "1800-3000"];
   const bedrooms = [1, 2, 3, 4, 5, "6+"];
   const bathrooms = [1, 2, 3, 4, 5, "6+"];
+  const kitchens = [1, 2, "3+"];
 
 
   return (
@@ -164,6 +166,18 @@ export default function QuotePage() {
                 <select as="select" name="bathrooms" value={formik.values.bathrooms} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                   <option className="greyed-out" value="" disabled={true}>Select Number of Bathrooms</option>
                   {bathrooms.map((option, i) => {
+                    return (
+                      <option value={option} key={i}>{option}</option>
+                    )
+                  })}
+                </select>
+              </label>
+
+              <label className="dropdown" >
+                Number of Kitchens
+                <select as="select" name="kitchens" value={formik.values.kitchens} onChange={formik.handleChange} onBlur={formik.handleBlur}>
+                  <option className="greyed-out" value="" disabled={true}>Select Number of Kitchens</option>
+                  {kitchens.map((option, i) => {
                     return (
                       <option value={option} key={i}>{option}</option>
                     )
