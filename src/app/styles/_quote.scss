@@ -5,6 +5,10 @@
   margin: 0 auto;
   min-height: 55vh;
 
+  .mobile-drop {
+    min-height: 40px !important;
+  }
+
 
   form {
     display: flex;
