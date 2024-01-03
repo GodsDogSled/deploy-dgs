@@ -3,11 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import ServiceCard from "../components/ServiceCard";
-import CompleteServiceCard from "../components/CompleteServiceCard";
-import TestimonialCard from "../components/TestimonialCard";
-import window from "./images/window.jpeg";
-import mop from "./images/swifer.jpeg";
-import hands from "./images/Transparent Bottole.png";
+import Script from 'next/script'
+// import CompleteServiceCard from "../components/CompleteServiceCard";
+// import TestimonialCard from "../components/TestimonialCard";
+// import window from "./images/window.jpeg";
+// import mop from "./images/swifer.jpeg";
+
 import EmblaCarousel from "../components/EmblaCarousel";
 import Head from 'next/head';
 import LandingCarousel from '../components/landingCarousel';
@@ -80,6 +81,16 @@ export default function Home() {
           key="desc"
         /> */}
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-N870NDPYKH');
+        `}
+      </Script>
       <section className="hero section">
         <div className="content">
           <span className="topper">100% Satisfaction</span>
