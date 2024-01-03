@@ -73,14 +73,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          DGS Cleaning Services | Greater Vancouver Area
-        </title>
-        <meta
+
+        {/* <meta
           name="dgs cleaning vancouver"
           content="Your local cleaning solution for every mess "
           key="desc"
-        />
+        /> */}
       </Head>
       <section className="hero section">
         <div className="content">
