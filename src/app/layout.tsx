@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'DGS Cleaning | Greater Vancouver',
-  description: 'Cleaning Servive Website',
+  description: 'Discover the epitome of cleanliness with our Greater Vancouver based home cleaning services. Elevate your living spaces with our meticulous and professional touch. From sparkling kitchens to spotless bathrooms, trust us to transform your home into a haven of freshness. Schedule your appointment today for a cleaner, healthier, and happier living environment!',
 }
 
 export default function RootLayout({

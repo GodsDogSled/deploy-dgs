@@ -125,7 +125,7 @@ export default function QuotePage() {
               </label>
               <label className="dropdown" >
                 Type of Service
-                <select as="select" name="service" value={formik.values.service} onChange={formik.handleChange} onBlur={formik.handleBlur}>
+                <select className="mobile-drop" as="select" name="service" value={formik.values.service} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                   <option className="greyed-out" value="" disabled={true}>Select Service Type</option>
                   {serviceTypes.map((option, i) => {
                     return (
@@ -151,7 +151,7 @@ export default function QuotePage() {
 
               <label className="dropdown" >
                 Number of Bedrooms
-                <select as="select" name="bedrooms" value={formik.values.bedrooms} onChange={formik.handleChange} onBlur={formik.handleBlur}>
+                <select className="mobile-drop" as="select" name="bedrooms" value={formik.values.bedrooms} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                   <option className="greyed-out" value="" disabled={true}>Select Number of Bedrooms</option>
                   {bedrooms.map((option, i) => {
                     return (
@@ -163,7 +163,7 @@ export default function QuotePage() {
 
               <label className="dropdown" >
                 Number of Bathrooms
-                <select as="select" name="bathrooms" value={formik.values.bathrooms} onChange={formik.handleChange} onBlur={formik.handleBlur}>
+                <select className="mobile-drop" as="select" name="bathrooms" value={formik.values.bathrooms} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                   <option className="greyed-out" value="" disabled={true}>Select Number of Bathrooms</option>
                   {bathrooms.map((option, i) => {
                     return (
@@ -175,7 +175,7 @@ export default function QuotePage() {
 
               <label className="dropdown" >
                 Number of Kitchens
-                <select as="select" name="kitchens" value={formik.values.kitchens} onChange={formik.handleChange} onBlur={formik.handleBlur}>
+                <select className="mobile-drop" as="select" name="kitchens" value={formik.values.kitchens} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                   <option className="greyed-out" value="" disabled={true}>Select Number of Kitchens</option>
                   {kitchens.map((option, i) => {
                     return (
