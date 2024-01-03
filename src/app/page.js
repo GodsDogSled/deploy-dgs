@@ -81,7 +81,7 @@ export default function Home() {
           key="desc"
         /> */}
       </Head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-N870NDPYKH" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
