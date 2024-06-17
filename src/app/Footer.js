@@ -51,7 +51,7 @@ export default function Footer() {
           <ul>
             <li>
               <Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />
-              +1 (778 558-6314)
+              +1 (778 558-6341)
             </li>
             <li>
               <a className="email-link" style={{ display: "flex", justifyItems: "center" }} href="mailto: dgscservices@gmail.com" ><Image className="cs-icon" src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true" />dgscservices@gmail.com</a>
