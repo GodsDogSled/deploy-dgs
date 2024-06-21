@@ -122,8 +122,8 @@ export default function QuotePage() {
                   className="copntact-input"
                   type="email" />
               </label>
-              <label className={`contact-label ${formik.touched.email && formik.errors.email ? "red-error" : ""}`}>
-                {formik.touched.email && formik.errors.email ? formik.errors.email : "Email"}
+              <label className={`contact-label ${formik.touched.phone && formik.errors.phone ? "red-error" : ""}`}>
+                {formik.touched.phone && formik.errors.phone ? formik.errors.phone : "Email"}
                 <input
                   onBlur={formik.handleBlur}
                   id="phone"
