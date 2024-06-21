@@ -123,7 +123,7 @@ export default function QuotePage() {
                   type="email" />
               </label>
               <label className={`contact-label ${formik.touched.phone && formik.errors.phone ? "red-error" : ""}`}>
-                {formik.touched.phone && formik.errors.phone ? formik.errors.phone : "Email"}
+                {formik.touched.phone && formik.errors.phone ? formik.errors.phone : "Phone"}
                 <input
                   onBlur={formik.handleBlur}
                   id="phone"
