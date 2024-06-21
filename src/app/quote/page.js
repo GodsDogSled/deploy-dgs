@@ -17,6 +17,7 @@ export default function QuotePage() {
   const formik = useFormik({
     initialValues: {
       email: "",
+      phone: "",
       name: "",
       service: "",
       size: "",
@@ -25,9 +26,6 @@ export default function QuotePage() {
       pets: "",
       extras: []
     },
-
-
-
 
     // Validate Form
     validationSchema: Yup.object({
@@ -49,6 +47,7 @@ export default function QuotePage() {
       const templateParams = {
         from_name: values.name,
         from_email: values.email,
+        from_phone: values.phone,
         service_type: values.service,
         size: values.size,
         number_bedrooms: values.bedrooms,
@@ -122,6 +121,17 @@ export default function QuotePage() {
                   onChange={formik.handleChange}
                   className="copntact-input"
                   type="email" />
+              </label>
+              <label className={`contact-label ${formik.touched.email && formik.errors.email ? "red-error" : ""}`}>
+                {formik.touched.email && formik.errors.email ? formik.errors.email : "Email"}
+                <input
+                  onBlur={formik.handleBlur}
+                  id="phone"
+                  placeholder="Phone Number"
+                  value={formik.values.phone}
+                  onChange={formik.handleChange}
+                  className="copntact-input"
+                  type="tel" />
               </label>
               <label className="dropdown" >
                 Type of Service
